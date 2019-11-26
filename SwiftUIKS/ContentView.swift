@@ -10,10 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CheckerBoard {
+        CheckerBoard(backgroundColor: .green) {
             Rectangle().foregroundColor(.red)
             Rectangle().foregroundColor(.black)
         }
+//        CheckerBoard(backgroundColor: .green) {
+//            Text("SwifUI Rocks")
+//            Image(systemName: "cloud")
+//        }
      }
 }
 

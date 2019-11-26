@@ -11,6 +11,7 @@ import SwiftUI
 struct CheckerBoard<A, B>: View where A: View, B: View {
     let firstView: A
     let secondView: B
+    let stackColor: Color
     
     var body: some View {
         VStack {
@@ -22,16 +23,29 @@ struct CheckerBoard<A, B>: View where A: View, B: View {
                 secondView
                 firstView
             }
-        }
+        }.background(stackColor)
     }
     
-    init(@CheckerBoardBuilder builder: () -> (A, B)) {
+    init(backgroundColor: Color = .white, @CheckerBoardBuilder builder: () -> (A, B)) {
+        stackColor = backgroundColor
         (firstView, secondView) = builder()
+    }
+}
+
+extension CheckerBoard where B == Rectangle {
+    init(backgroundColor: Color = .white, @CheckerBoardBuilder builder: () -> (A)) {
+        stackColor = backgroundColor
+        firstView = builder()
+        secondView = Rectangle()
     }
 }
 
 @_functionBuilder
 struct CheckerBoardBuilder {
+    static func buildBlock<A: View>(_ firstView: A) -> A {
+        firstView
+    }
+    
     static func buildBlock<A: View, B: View>(_ firstView: A, _ secondView: B) -> (A, B) {
         (firstView, secondView)
     }
@@ -39,9 +53,12 @@ struct CheckerBoardBuilder {
 
 struct CheckerBoard_Previews: PreviewProvider {
     static var previews: some View {
-        CheckerBoard {
+        CheckerBoard(backgroundColor: .green) {
             Text("foo de foo")
             Text("bar de bar")
         }
+//        CheckerBoard {
+//            Text("foo de foo")
+//        }
     }
 }
