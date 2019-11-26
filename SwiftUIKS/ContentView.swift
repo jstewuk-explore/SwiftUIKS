@@ -10,8 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+        CheckerBoard {
+            Rectangle().foregroundColor(.red)
+            Rectangle().foregroundColor(.black)
+        }
+     }
 }
 
 struct ContentView_Previews: PreviewProvider {

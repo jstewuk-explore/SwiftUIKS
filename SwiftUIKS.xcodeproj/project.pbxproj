@@ -15,6 +15,7 @@
 		38A34E17237CF2FA00A97ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A34E15237CF2FA00A97ABC /* LaunchScreen.storyboard */; };
 		38A34E22237CF2FA00A97ABC /* SwiftUIKSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A34E21237CF2FA00A97ABC /* SwiftUIKSTests.swift */; };
 		38A34E2D237CF2FA00A97ABC /* SwiftUIKSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A34E2C237CF2FA00A97ABC /* SwiftUIKSUITests.swift */; };
+		38A84E27238D6AC900AE1413 /* CheckerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A84E26238D6AC900AE1413 /* CheckerBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		38A34E28237CF2FA00A97ABC /* SwiftUIKSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIKSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A34E2C237CF2FA00A97ABC /* SwiftUIKSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKSUITests.swift; sourceTree = "<group>"; };
 		38A34E2E237CF2FA00A97ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A84E26238D6AC900AE1413 /* CheckerBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				38A34E0A237CF2F700A97ABC /* AppDelegate.swift */,
 				38A34E0C237CF2F700A97ABC /* SceneDelegate.swift */,
 				38A34E0E237CF2F700A97ABC /* ContentView.swift */,
+				38A84E26238D6AC900AE1413 /* CheckerBoard.swift */,
 				38A34E10237CF2FA00A97ABC /* Assets.xcassets */,
 				38A34E15237CF2FA00A97ABC /* LaunchScreen.storyboard */,
 				38A34E18237CF2FA00A97ABC /* Info.plist */,
@@ -269,6 +272,7 @@
 			files = (
 				38A34E0B237CF2F700A97ABC /* AppDelegate.swift in Sources */,
 				38A34E0D237CF2F700A97ABC /* SceneDelegate.swift in Sources */,
+				38A84E27238D6AC900AE1413 /* CheckerBoard.swift in Sources */,
 				38A34E0F237CF2F700A97ABC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
