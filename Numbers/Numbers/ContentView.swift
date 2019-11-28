@@ -9,14 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var value = 2.0
-    
+        
     var body: some View {
-        VStack {
-            ValueView(value: value)
-            ValueSlider(value: $value)
-         }
+        ValueInputView()
     }
 }
 

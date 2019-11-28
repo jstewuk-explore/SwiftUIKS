@@ -18,6 +18,8 @@
 		38A84E65238E139E00AE1413 /* ValueSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A84E64238E139E00AE1413 /* ValueSlider.swift */; };
 		38A84E67238E13B900AE1413 /* ValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A84E66238E13B900AE1413 /* ValueView.swift */; };
 		38A84E69238E175300AE1413 /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A84E68238E175300AE1413 /* Rounding.swift */; };
+		38A84E6E238E248300AE1413 /* ValueInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A84E6D238E248300AE1413 /* ValueInputView.swift */; };
+		38A84E71238E257600AE1413 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A84E70238E257600AE1413 /* Ratings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		38A84E64238E139E00AE1413 /* ValueSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueSlider.swift; sourceTree = "<group>"; };
 		38A84E66238E13B900AE1413 /* ValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueView.swift; sourceTree = "<group>"; };
 		38A84E68238E175300AE1413 /* Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
+		38A84E6D238E248300AE1413 /* ValueInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInputView.swift; sourceTree = "<group>"; };
+		38A84E70238E257600AE1413 /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,15 +109,11 @@
 		38A84E33238E132A00AE1413 /* Numbers */ = {
 			isa = PBXGroup;
 			children = (
-				38A84E64238E139E00AE1413 /* ValueSlider.swift */,
-				38A84E66238E13B900AE1413 /* ValueView.swift */,
-				38A84E68238E175300AE1413 /* Rounding.swift */,
-				38A84E34238E132A00AE1413 /* AppDelegate.swift */,
-				38A84E36238E132A00AE1413 /* SceneDelegate.swift */,
+				38A84E6F238E254C00AE1413 /* Model */,
 				38A84E38238E132A00AE1413 /* ContentView.swift */,
-				38A84E3A238E132C00AE1413 /* Assets.xcassets */,
-				38A84E3F238E132C00AE1413 /* LaunchScreen.storyboard */,
-				38A84E42238E132C00AE1413 /* Info.plist */,
+				38A84E6A238E230A00AE1413 /* ValueInput */,
+				38A84E6C238E234400AE1413 /* Support */,
+				38A84E6B238E233200AE1413 /* Utilities */,
 				38A84E3C238E132C00AE1413 /* Preview Content */,
 			);
 			path = Numbers;
@@ -143,6 +143,44 @@
 				38A84E58238E132C00AE1413 /* Info.plist */,
 			);
 			path = NumbersUITests;
+			sourceTree = "<group>";
+		};
+		38A84E6A238E230A00AE1413 /* ValueInput */ = {
+			isa = PBXGroup;
+			children = (
+				38A84E64238E139E00AE1413 /* ValueSlider.swift */,
+				38A84E66238E13B900AE1413 /* ValueView.swift */,
+				38A84E6D238E248300AE1413 /* ValueInputView.swift */,
+			);
+			path = ValueInput;
+			sourceTree = "<group>";
+		};
+		38A84E6B238E233200AE1413 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				38A84E68238E175300AE1413 /* Rounding.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		38A84E6C238E234400AE1413 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				38A84E34238E132A00AE1413 /* AppDelegate.swift */,
+				38A84E36238E132A00AE1413 /* SceneDelegate.swift */,
+				38A84E3A238E132C00AE1413 /* Assets.xcassets */,
+				38A84E3F238E132C00AE1413 /* LaunchScreen.storyboard */,
+				38A84E42238E132C00AE1413 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		38A84E6F238E254C00AE1413 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38A84E70238E257600AE1413 /* Ratings.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A84E71238E257600AE1413 /* Ratings.swift in Sources */,
 				38A84E65238E139E00AE1413 /* ValueSlider.swift in Sources */,
+				38A84E6E238E248300AE1413 /* ValueInputView.swift in Sources */,
 				38A84E67238E13B900AE1413 /* ValueView.swift in Sources */,
 				38A84E35238E132A00AE1413 /* AppDelegate.swift in Sources */,
 				38A84E37238E132A00AE1413 /* SceneDelegate.swift in Sources */,
@@ -450,7 +490,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Numbers/Preview Content\"";
 				DEVELOPMENT_TEAM = 35HM669KA6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Numbers/Info.plist;
+				INFOPLIST_FILE = Numbers/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +510,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Numbers/Preview Content\"";
 				DEVELOPMENT_TEAM = 35HM669KA6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Numbers/Info.plist;
+				INFOPLIST_FILE = Numbers/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
